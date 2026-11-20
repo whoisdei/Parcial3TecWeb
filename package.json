@@ -1,0 +1,19 @@
+{
+  "name": "reportabarrio",
+  "version": "1.0.0",
+  "description": "Plataforma ciudadana para reportar problemas del barrio (ODS 11)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

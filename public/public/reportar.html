@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportar | ReportaBarrio</title>
+  <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="/">
+      <img src="/img/logo.svg" alt="Logo de ReportaBarrio" width="36" height="36">
+      <span>ReportaBarrio</span>
+    </a>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/reportar.html">Reportar</a>
+      <a href="/reportes">Reportes</a>
+      <a href="/estadisticas">Estadísticas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Nuevo reporte</h1>
+      <!-- El formulario envía los datos por POST a la ruta /reportes del servidor -->
+      <form action="/reportes" method="post" class="formulario">
+        <div class="campo">
+          <label for="titulo">Título del problema</label>
+          <input type="text" id="titulo" name="titulo" placeholder="Ej: Hueco en la calle 5" required>
+        </div>
+
+        <div class="campo">
+          <label for="categoria">Categoría</label>
+          <select id="categoria" name="categoria" required>
+            <option value="">Selecciona una categoría</option>
+            <option value="vias">Vías y huecos</option>
+            <option value="alumbrado">Alumbrado público</option>
+            <option value="residuos">Residuos y basuras</option>
+            <option value="agua">Agua y alcantarillado</option>
+            <option value="espacio">Espacio público y zonas verdes</option>
+            <option value="seguridad">Seguridad vial</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="barrio">Barrio</label>
+          <input type="text" id="barrio" name="barrio" placeholder="Ej: Centro" required>
+        </div>
+
+        <div class="campo completo">
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" name="descripcion" rows="4" placeholder="Cuéntanos qué está pasando" required></textarea>
+        </div>
+
+        <fieldset class="campo completo">
+          <legend>Urgencia</legend>
+          <label><input type="radio" name="urgencia" value="baja" required> Baja</label>
+          <label><input type="radio" name="urgencia" value="media"> Media</label>
+          <label><input type="radio" name="urgencia" value="alta"> Alta</label>
+        </fieldset>
+
+        <div class="campo completo">
+          <label for="contacto">Correo de contacto</label>
+          <input type="email" id="contacto" name="contacto" placeholder="correo@ejemplo.com" required>
+        </div>
+
+        <button type="submit">Enviar reporte</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>ReportaBarrio · Proyecto de aula de Tecnologías Web · ODS 11: Ciudades y comunidades sostenibles</p>
+  </footer>
+</body>
+</html>
