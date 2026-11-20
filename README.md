@@ -1,7 +1,6 @@
 # ReportaBarrio
 
 Plataforma ciudadana para reportar problemas del barrio, hecha con Node.js y Express.
-Proyecto de aula de Tecnologías Web · Universidad Simón Bolívar.
 
 ## Integrante
 - David Daniel Yepes Cañas
