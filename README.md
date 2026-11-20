@@ -3,10 +3,8 @@
 Plataforma ciudadana para reportar problemas del barrio, hecha con Node.js y Express.
 Proyecto de aula de Tecnologías Web · Universidad Simón Bolívar.
 
-## Integrantes
-- Nombre Apellido
-- Nombre Apellido
-- Nombre Apellido
+## Integrante
+- David Daniel Yepes Cañas
 
 ## Descripción
 Los vecinos pueden registrar reportes (huecos, basuras, alumbrado, fugas de agua, etc.),
@@ -40,5 +38,3 @@ Luego abre http://localhost:3000
 
 Categorías válidas para el filtro: `vias`, `alumbrado`, `residuos`, `agua`, `espacio`, `seguridad`.
 
-## Video de sustentación
-Enlace: (pegar aquí el link del video)
